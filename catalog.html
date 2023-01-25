@@ -34,6 +34,10 @@
             </a>
           </li>
           <li class="navigation-item">
+            <span class="visually-hidden">Избранное</span>
+              <span class="favorite-active">12</span>
+          </li>
+          <li class="navigation-item">
             <a class="button header-button">Хочу сюда!</a>
           </li>
         </ul>
@@ -41,19 +45,21 @@
     </header>
 
     <main class="main-catalog">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
-          </li>
-        </ul>
-      </header>
-
+      <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
       <section class="catalog-filters">
+        <header class="inner-header">
+          <h2 class="inner-header-title">Гостиницы Седоны</h2>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">
+                <span class="visually-hidden">Главная</span>
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
         <h2 class="visually-hidden">Фильтры для подбора гостиницы</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -157,7 +163,9 @@
               <span class="product-card-price">От 4000 &#8381;</span>
               <a class="button product-card-details-button" href="#">Подробнее</a>
               <button class="button product-card-button favorite-button-inactive" type="button">В избранное</button>
-              <img class="hotel-star four-stars" src="#" alt="Четыре звезды.">
+              <p class="hotel-stars stars-four">
+                <span class="visually-hidden">Рейтинг гостиницы - четыре звезды</span>
+              </p>
               <span class="hotel-site-rating">Рейтинг: 8,5</span>
             </li>
             <li class="product-card">
@@ -169,7 +177,9 @@
               <span class="product-card-price">От 5000 &#8381;</span>
               <a class="button product-card-details-button" href="#">Подробнее</a>
               <button class="button product-card-button favorite-button-active" type="button">В избранном</button>
-              <img class="hotel-star four-stars" src="#" alt="Четыре звезды.">
+              <p class="hotel-stars stars-four">
+                <span class="visually-hidden">Рейтинг гостиницы - четыре звезды</span>
+              </p>
               <span class="hotel-site-rating">Рейтинг: 9,2</span>
             </li>
             <li class="product-card">
@@ -181,7 +191,9 @@
               <span class="product-card-price">От 2500 &#8381;</span>
               <a class="button product-card-details-button" href="#">Подробнее</a>
               <button class="button product-card-button favorite-button-inactive" type="button">В избранное</button>
-              <img class="hotel-star three-stars" src="#" alt="Три звезды.">
+              <p class="hotel-stars stars-three">
+                <span class="visually-hidden">Рейтинг гостиницы - три звезды</span>
+              </p>
               <span class="hotel-site-rating">Рейтинг: 6,9</span>
             </li>
             <li class="product-card">
@@ -193,7 +205,9 @@
               <span class="product-card-price">От 1500 &#8381;</span>
               <a class="button product-card-details-button" href="#">Подробнее</a>
               <button class="button product-card-button favorite-button-inactive" type="button">В избранное</button>
-              <img class="hotel-star two-stars" src="#" alt="Две звезды.">
+              <p class="hotel-stars stars-four">
+                <span class="visually-hidden">Рейтинг гостиницы - две звезды</span>
+              </p>
               <span class="hotel-site-rating">Рейтинг: 5,0</span>
             </li>
           </ul>
@@ -219,7 +233,6 @@
           </li>
         </ol>
       </section>
-
     </main>
 
     <footer class="page-footer">
@@ -263,7 +276,9 @@
 
       <section class="footer-htmlacademy">
         <h2 class="visually-hidden">Ссылка на HTML Academy</h2>
-        <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+        <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </section>
     </footer>
   </body>
