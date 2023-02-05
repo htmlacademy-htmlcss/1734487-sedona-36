@@ -38,6 +38,7 @@ body {
   font-weight: 700;
 }
 
+
 .navigation {
   font-size: 20px;
 }
@@ -49,10 +50,16 @@ body {
   line-height: 20px;
 }
 
+.welcome-slogan-container {
+  background-color: #82B3D3;
+  background-image: url('../images/index/welcome-background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
 .advantages {
   text-align: center;
 }
-
 
 .advantages-title {
   font-weight: 700;
