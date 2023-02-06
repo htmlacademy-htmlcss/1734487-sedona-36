@@ -43,6 +43,11 @@ body {
   font-size: 20px;
 }
 
+.navigation-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header-button {
   color: #ffffff;
   background-color: #756157;
@@ -55,6 +60,10 @@ body {
   background-image: url('../images/index/welcome-background.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+
+.weclome-slogan {
+  align: center;
 }
 
 .advantages {
@@ -131,23 +140,20 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-/* ???? */
-.item-house {
-  background-image: url('../images/index/services-house.svg');
+.services-item-block {
   background-repeat: no-repeat;
   background-position: 50% 0;
+}
+.item-house {
+  background-image: url('../images/index/services-house.svg');
 }
 
 .item-food {
   background-image: url('../images/index/services-food.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
 }
 
 .item-gift {
   background-image: url('../images/index/services-gift.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 0;
 }
 
 .hotel-search,
@@ -190,19 +196,20 @@ body {
   background-repeat: no-repeat;
 }
 
+.footer-social-item {
+  background-repeat: no-repeat;
+}
+
 .social-icon-vk {
   background-image: url('../images/footer/social-vkontakte.svg');
-  background-repeat: no-repeat;
 }
 
 .social-icon-tg {
   background-image: url('../images/footer/social-telegram.svg');
-  background-repeat: no-repeat;
 }
 
 .social-icon-youtube {
   background-image: url('../images/footer/social-youtube.svg');
-  background-repeat: no-repeat;
 }
 
 .footer-contacts-address-phone {
@@ -211,4 +218,7 @@ body {
   line-height: 40px;
   text-decoration: none;
   color: inherit;
+  font-style: normal;
 }
+
+/* Catalog */
