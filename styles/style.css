@@ -219,3 +219,161 @@ body {
 }
 
 /* Catalog */
+
+.catalog-filters {
+  color: #ffffff;
+  background-color: #81B3D3;
+  background-image: url('../images/catalog/filters-background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  color:inherit;
+}
+
+.breadcrumbs-item a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.filter-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.control-input[type="text"] {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-filter-group .button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.filters-submit {
+  background-color:#81B3D3;
+}
+
+.filters-reset {
+  background-color:transparent;
+}
+
+.number-matches {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.icon-view-button {
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.tile-layout-button {
+  background-image: url('../images/catalog/view-tile.svg');
+}
+
+.cards-layout-button {
+  background-image: url('../images/catalog/view-card.svg');
+}
+
+.list-layout-button {
+  background-image: url('../images/catalog/view-list.svg');
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.product-card-type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.product-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #333333;
+}
+
+.product-card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.details-button {
+  background-color: #756157;
+}
+
+.favorite-button-active {
+  background-color: #7DB54F;
+}
+
+.favorite-button-inactive {
+  background-color: #82B3D3;
+}
+
+.hotel-stars {
+  background-image: url('../images/catalog/hotel-star.svg');
+}
+
+.hotel-site-rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #F2F2F2;
+  text-transform: uppercase;
+}
+.pagination-link {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
