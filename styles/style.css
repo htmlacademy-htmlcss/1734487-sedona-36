@@ -42,6 +42,10 @@ body {
   font-size: 20px;
 }
 
+.navigation-list {
+  list-style-type: none;
+}
+
 .navigation-link {
   text-decoration: none;
   color: inherit;
@@ -64,6 +68,10 @@ body {
 
 .advantages {
   text-align: center;
+}
+
+.advantages-list {
+  list-style: none;
 }
 
 .advantages-item {
@@ -118,6 +126,10 @@ body {
 
 .services {
   text-align: center;
+}
+
+.services-list {
+  list-style: none;
 }
 
 .services-title {
@@ -216,6 +228,10 @@ body {
   background-image: url('../images/footer/subscribe-background.jpg');
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.footer-social-list {
+  list-style: none;
 }
 
 .footer-social-item {
