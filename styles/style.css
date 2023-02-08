@@ -44,6 +44,7 @@ body {
 
 .navigation-list {
   list-style-type: none;
+  padding: 0;
 }
 
 .navigation-link {
@@ -53,11 +54,11 @@ body {
 
 .favorite-active {
   font-weight: 400;
-font-size: 10px;
-line-height: 10px;
-text-align: center;
-color: #FFFFFF;
-background-color: #7DB54F;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #7DB54F;
 }
 
 .header-button {
@@ -81,6 +82,7 @@ background-color: #7DB54F;
 
 .advantages-list {
   list-style: none;
+  padding: 0;
 }
 
 .advantages-item {
@@ -139,6 +141,7 @@ background-color: #7DB54F;
 
 .services-list {
   list-style: none;
+  padding: 0;
 }
 
 .services-title {
@@ -242,6 +245,7 @@ background-color: #7DB54F;
 
 .footer-social-list {
   list-style: none;
+  padding: 0;
 }
 
 .footer-social-item {
@@ -296,7 +300,10 @@ background-color: #7DB54F;
   line-height: 78px;
 }
 
-.filter-list {}
+.filter-list {
+  list-style-type: none;
+  padding: 0;
+}
 
 .filter-item {
   font-weight: 400;
@@ -349,6 +356,7 @@ background-color: #7DB54F;
 
 .view-list {
   list-style: none;
+  padding: 0;
 }
 
 .icon-view-button {
@@ -370,6 +378,7 @@ background-color: #7DB54F;
 
 .products-list {
   list-style: none;
+  padding: 0;
 }
 
 .product-card-title {
