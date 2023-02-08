@@ -51,6 +51,15 @@ body {
   color: inherit;
 }
 
+.favorite-active {
+  font-weight: 400;
+font-size: 10px;
+line-height: 10px;
+text-align: center;
+color: #FFFFFF;
+background-color: #7DB54F;
+}
+
 .header-button {
   color: #ffffff;
   background-color: #756157;
@@ -81,7 +90,7 @@ body {
 
 .advantages-item-colored {
   background-color: #82B3D3;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .advantages-item-semicolored {
@@ -164,6 +173,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
+
 .item-house {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url('../images/index/services-house.svg');
@@ -271,7 +281,7 @@ body {
 
 .breadcrumbs-link {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
 .breadcrumbs-item a {
@@ -286,9 +296,7 @@ body {
   line-height: 78px;
 }
 
-.filter-list {
-
-}
+.filter-list {}
 
 .filter-item {
   font-weight: 400;
@@ -318,11 +326,11 @@ body {
 }
 
 .filters-submit {
-  background-color:#81B3D3;
+  background-color: #81B3D3;
 }
 
 .filters-reset {
-  background-color:transparent;
+  background-color: transparent;
 }
 
 .number-matches {
@@ -416,6 +424,7 @@ body {
   background-color: #F2F2F2;
   text-transform: uppercase;
 }
+
 .pagination-link {
   background-color: #82B3D3;
   color: #ffffff;
