@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/ptsans-400.woff20') format('woff2');
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/ptsans-700.woff20') format('woff2');
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -27,12 +27,6 @@
   overflow: hidden;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: "PT Sans", sans-serif;
@@ -47,7 +41,6 @@ body {
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
-  padding: 0;
 }
 
 .button {
@@ -57,7 +50,6 @@ body {
 .page-header {
   font-weight: 700;
 }
-
 
 .navigation {
   font-size: 20px;
@@ -89,13 +81,16 @@ body {
   line-height: 20px;
 }
 
-.welcome-slogan-container {
-  background-color: #82B3D3;
+.main-index {
+  text-align: center;
+}
+
+.welcome {
+  background-color: #b9daef;
   background-image: url('../images/index/welcome-background.jpg');
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  text-align: center;
-  padding: 51.4px 0 81.23px;
+  background-size: cover;
+  padding: 50px 0 77px;
 }
 
 .advantages {
@@ -258,11 +253,12 @@ body {
 }
 
 .index-footer-newsletter {
+  background-image: url('../images/footer/subscribe-background.jpg');
   color: #ffffff;
   background-color: #82B3D3;
-  background-image: url('../images/footer/subscribe-background.jpg');
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  padding: 51px 0 77px;
 }
 
 .footer-social-list {
@@ -302,7 +298,7 @@ body {
   background-color: #81B3D3;
   background-image: url('../images/catalog/filters-background.jpg');
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .breadcrumbs-link {
@@ -338,8 +334,6 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
-
-
 
 .control-input[type="text"] {
   font-weight: 700;
