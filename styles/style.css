@@ -286,10 +286,8 @@ body {
   line-height: 78px;
 }
 
-.filter-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
+.filter-list {
+
 }
 
 .filter-item {
@@ -297,6 +295,14 @@ body {
   font-size: 18px;
   line-height: 23px;
 }
+
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+
 
 .control-input[type="text"] {
   font-weight: 700;
@@ -333,6 +339,10 @@ body {
   color: #333333;
 }
 
+.view-list {
+  list-style: none;
+}
+
 .icon-view-button {
   background-repeat: no-repeat;
   background-position: 50%;
@@ -348,6 +358,10 @@ body {
 
 .list-layout-button {
   background-image: url('../images/catalog/view-list.svg');
+}
+
+.products-list {
+  list-style: none;
 }
 
 .product-card-title {
