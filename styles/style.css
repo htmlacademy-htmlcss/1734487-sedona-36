@@ -14,6 +14,18 @@
   font-display: swap;
 }
 
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
+html {
+  height: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -28,6 +40,7 @@
 }
 
 body {
+  height: 100%;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -37,6 +50,9 @@ body {
 }
 
 .container {
+  display:flex;
+  flex-direction: column;
+  min-height: 100%;
   width: 1200px;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -83,6 +99,7 @@ body {
 
 .main-index {
   text-align: center;
+  flex-grow:1;
 }
 
 .welcome {
