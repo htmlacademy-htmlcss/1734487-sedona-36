@@ -29,12 +29,12 @@
 
           <ul class="navigation-list navigation-actions">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-link-favorite" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorite-active">12</span>
               </a>
@@ -53,7 +53,7 @@
             <h2 class="inner-header-title">Гостиницы Седоны</h2>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
+                <a class="breadcrumbs-link breadcrumb-link-home" href="index.html">
                   <span class="visually-hidden">Главная</span>
                 </a>
               </li>
@@ -65,7 +65,7 @@
           <h2 class="visually-hidden">Фильтры для подбора гостиницы</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
-              <legend class="filter-title">Инфраструктура</legend>
+              <legend class="filter-title">Инфраструктура:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
@@ -85,7 +85,7 @@
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <legend class="filter-title">Тип жилья</legend>
+              <legend class="filter-title">Тип жилья:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
@@ -104,14 +104,16 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group catalog-filter-right">
               <legend class="filter-title">Стоимость, &#8381;:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
-                  <input class="control-input" type="text" name="min-price" id="min-price" value="0">
-                  <label class="visually-hidden" for="min-price">Минимальная стоимость</label>
-                  <input class="control-input" type="text" name="max-price" id="max-price" value="9000">
-                  <label class="visually-hidden" for="max-price">Максимальная стоимость</label>
+                  <div class="range-price">
+                    <input class="control-input  control-input-min" type="text" name="min-price" id="min-price" value="0">
+                    <label class="visually-hidden" for="min-price">Минимальная стоимость</label>
+                    <input class="control-input control-input-max" type="text" name="max-price" id="max-price" value="9000">
+                    <label class="visually-hidden" for="max-price">Максимальная стоимость</label>
+                  </div>
                 </li>
                 <li class="filter-item">
                   <input class="control-input" type="range" id="range-price" name="range-price" min="0" max="11400">
@@ -119,7 +121,7 @@
                 </li>
               </ul>
             </fieldset>
-            <div class="catalog-filter-group">
+            <div class="catalog-filter-group catalog-filter-buttons">
               <h3 class="visually-hidden">Применение и сброс фильтров</h3>
               <button class="button filters-submit" type="submit">Применить</button>
               <button class="button filters-reset" type="reset">Сбросить</button>
@@ -138,7 +140,7 @@
             </select>
             <ul class="view-list">
               <li class="view-item">
-                <a class="icon-view-button tile-layout-button" href="#">
+                <a class="icon-view-button tile-layout-button icon-view-active" href="#">
                   <span class="visually-hidden">Показать плитку</span>
                 </a>
               </li>
@@ -219,8 +221,8 @@
             </ul>
           </div>
           <ol class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link  pagination-current">1</a>
+            <li class="pagination-item pagination-current">
+              <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -243,54 +245,58 @@
 
       <footer class="page-footer">
         <section class="catalog-footer-newsletter">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-          <p class="newsletter-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field-newsletter" placeholder="Ваш e-mail" type="email" name="newsletter-email"
-              id="newsletter-email" required>
-            <button class="button newsletter-button" type="submit">Подписаться</button>
-          </form>
+          <div class="footer-newsletter-container">
+            <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+            <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="newsletter-email">Email</label>
+              <input class="field-newsletter" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+                id="newsletter-email" required>
+              <button class="button newsletter-button" type="submit">Подписаться</button>
+            </form>
+          </div>
         </section>
 
-        <section class="footer-social">
-          <h2 class="visually-hidden">Наши страницы на внешних ресурсах</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item social-icon-vk">
-              <a class="footer-social-icon" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="footer-social-item social-icon-tg">
-              <a class="footer-social-icon" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграм</span>
-              </a>
-            </li>
-            <li class="footer-social-item social-icon-youtube">
-              <a class="footer-social-icon" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+        <div class="page-footer-container">
+          <section class="footer-social">
+            <h2 class="visually-hidden">Наши страницы на внешних ресурсах</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="footer-social-icon social-icon-vk" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-icon social-icon-tg" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Телеграм</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-icon social-icon-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </section>
 
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <address class="footer-contacts-address">
-            <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
-        </section>
+          <section class="footer-contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <address class="footer-contacts-address">
+              <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </address>
+          </section>
 
-        <section class="footer-htmlacademy">
-          <h2 class="visually-hidden">Ссылка на HTML Academy</h2>
-          <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/">
-            <span class="visually-hidden">HTML Academy</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="none">
-              <path fill="#000"
-                d="M0 13.2564v2.6h2.5v-2.6H0ZM11.6 4.85645c-1.6 0-2.8.7-3.6 1.7h-.1V.356445h-2V15.8564h2v-5.3c0-2.09995 1.3-3.59995 3.3-3.59995 1.8 0 2.9 1.4 2.9 3.19995v5.7h2V9.75644c.1-3-1.8-4.89999-4.5-4.89999ZM26.6 5.15645h-4.8v-3.7h-2v3.8h-1.9v2h1.9v5.99995c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V7.15645h4.8v-2ZM41.1 4.95645c-1.6 0-2.9.79999-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29V15.7564h2v-5.4c0-1.99995 1-3.49995 2.6-3.49995 1.5 0 2.4 1 2.4 2.6v6.29995h2v-5.6c0-2.39995 1.4-3.29995 2.6-3.29995 1.5 0 2.4 1 2.4 2.6v6.29995h2V9.25644c.1-2.5-1.4-4.29999-3.9-4.29999ZM47.8 13.0564c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.356445h-2V13.0564ZM28.9 20.0564c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.3564c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.0564c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.1564c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.2564c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.2564c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.3564l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
-            </svg>
-          </a>
-        </section>
+          <section class="footer-htmlacademy">
+            <h2 class="visually-hidden">Ссылка на HTML Academy</h2>
+            <a class="footer-htmlacademy-link" href="https://htmlacademy.ru/">
+              <span class="visually-hidden">HTML Academy</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="none">
+                <path fill="#000"
+                  d="M0 13.2564v2.6h2.5v-2.6H0ZM11.6 4.85645c-1.6 0-2.8.7-3.6 1.7h-.1V.356445h-2V15.8564h2v-5.3c0-2.09995 1.3-3.59995 3.3-3.59995 1.8 0 2.9 1.4 2.9 3.19995v5.7h2V9.75644c.1-3-1.8-4.89999-4.5-4.89999ZM26.6 5.15645h-4.8v-3.7h-2v3.8h-1.9v2h1.9v5.99995c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V7.15645h4.8v-2ZM41.1 4.95645c-1.6 0-2.9.79999-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29V15.7564h2v-5.4c0-1.99995 1-3.49995 2.6-3.49995 1.5 0 2.4 1 2.4 2.6v6.29995h2v-5.6c0-2.39995 1.4-3.29995 2.6-3.29995 1.5 0 2.4 1 2.4 2.6v6.29995h2V9.25644c.1-2.5-1.4-4.29999-3.9-4.29999ZM47.8 13.0564c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.356445h-2V13.0564ZM28.9 20.0564c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.3564c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.0564c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.1564c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.2564c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.2564c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.3564l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
+              </svg>
+            </a>
+          </section>
+        </div>
       </footer>
     </div>
   </body>
