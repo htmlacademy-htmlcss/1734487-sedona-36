@@ -115,7 +115,7 @@ body {
 }
 
 .navigation-actions {
-  min-width: 268px;
+  width: 268px;
   margin-left: auto;
 }
 
