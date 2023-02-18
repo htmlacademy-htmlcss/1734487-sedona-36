@@ -40,21 +40,21 @@ html {
 }
 
 body {
+  background-color: #F2F2F2;
   height: 100%;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  background-color: #F2F2F2;
 }
 
 .container {
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   min-height: 100%;
   width: 1200px;
-  background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
 }
@@ -149,17 +149,17 @@ body {
 }
 
 .favorite-active {
+  background-color: #7DB54F;
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
   text-align: center;
   color: #FFFFFF;
-  background-color: #7DB54F;
 }
 
 .header-button {
-  color: #ffffff;
   background-color: #756157;
+  color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 34px;
@@ -174,8 +174,9 @@ body {
 .welcome {
   background-color: #b9daef;
   background-image: url('../images/index/welcome-background.jpg');
+  background-position: center 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding: 51.4px 0 76px;
 }
 
@@ -332,7 +333,6 @@ body {
 }
 
 .item-house {
-
   background-image: url('../images/index/services-house.svg');
   background-position: 163.5px 81px;
 }
@@ -459,9 +459,9 @@ body {
 }
 
 .index-footer-newsletter {
+  background-color: #82B3D3;
   background-image: url('../images/footer/subscribe-background.jpg');
   color: #ffffff;
-  background-color: #82B3D3;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 96px 0 104px;
@@ -522,8 +522,8 @@ body {
 /* Catalog */
 
 .catalog-filters {
-  color: #ffffff;
   background-color: #81B3D3;
+  color: #ffffff;
   background-image: url('../images/catalog/filters-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -625,13 +625,13 @@ body {
 }
 
 .control-input[type="text"] {
+  background-color: #F2F2F2;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   width: 143px;
   height: 48px;
   margin-bottom: 36px;
-  background-color: #F2F2F2;
   border: none;
   outline: none;
   padding: 12px 0 12px 20px;
