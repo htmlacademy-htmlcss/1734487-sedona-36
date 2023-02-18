@@ -40,26 +40,27 @@ html {
 }
 
 body {
+  background-color: #F2F2F2;
   height: 100%;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  background-color: #F2F2F2;
 }
 
 .container {
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   min-height: 100%;
   width: 1200px;
-  background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
 }
 
 .button {
+  display: block;
   text-decoration: none;
   border-radius: 4px;
   border: none;
@@ -73,63 +74,96 @@ body {
 }
 
 .navigation {
+  width: 1060px;
   font-size: 20px;
   display: flex;
-  margin: 0 70px;
+  margin: 0 auto;
 }
 
 .navigation-logo {
-  margin-right: 44px;
+  margin-right: 28px;
+  display: block;
+  min-height: 64px;
+  min-width: 140px;
+}
+
+.page-header-logo {
+  position: absolute;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.navigation-item {
+  position: relative;
+}
+
+/* ВРЕМЕННОЕ РЕШЕНИЕ, ЧТОБЫ ПОТОМ НЕ ЗАБЫТЬ ПРО ЛИНИЮ В ПРИНЦИПЕ*/
+.current-page-item::after {
+  content: '';
+  border-bottom: 2px solid #756257;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  margin: 0 16px;
 }
 
 .navigation-actions {
+  width: 268px;
   margin-left: auto;
+  align-items: center;
 }
 
 .navigation-link {
   text-decoration: none;
   color: inherit;
+  display: block;
+  padding: 20px 16px;
+}
+
+
+.navigation-actions .navigation-link {
+  margin: 0;
+  padding: 0;
+  min-height: 64px;
+  min-width: 44px;
 }
 
 .navigation-link-search {
-  display: inline-block;
   background-image: url('../images/header/search.svg');
-  width: 20px;
-  height: 20px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .navigation-link-favorite {
-  display: inline-block;
   background-image: url('../images/header/favorite.svg');
-  width: 20px;
-  height: 20px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .favorite-active {
+  background-color: #7DB54F;
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
   text-align: center;
   color: #FFFFFF;
-  background-color: #7DB54F;
 }
 
 .header-button {
-  color: #ffffff;
   background-color: #756157;
+  color: #ffffff;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 34px;
+  margin-left: 20px;
 }
 
 .main-index {
@@ -140,9 +174,10 @@ body {
 .welcome {
   background-color: #b9daef;
   background-image: url('../images/index/welcome-background.jpg');
+  background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 0 77px;
+  padding: 51.4px 0 76px;
 }
 
 .advantages {
@@ -172,29 +207,32 @@ body {
 }
 
 .advantages-list {
-  list-style: none;
+  margin: 0;
   padding: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
 }
 
 .advantages-item {
+  display: flex;
   background-color: #ffffff;
   color: #000000;
-  width: 400px;
-  height: 385px;
-  display: flex;
 }
 
 .advantage-text-container {
+  width: 400px;
+  padding: 112.5px 85px;
+}
+
+.advantages-item-colored .advantage-text-container {
   padding: 102px 85px;
 }
 
-.advantages-item-colored {
+.advantages-item-colored,
+.advantages-item-colored .advantages-item-description {
   background-color: #82B3D3;
   color: #ffffff;
-  width: 1200px;
 }
 
 .advantages-item-semicolored {
@@ -205,12 +243,30 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.advantages-item-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.advantages-item-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+}
+
+.advantages-item-colored .advantages-item-title::after {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
 .advantages-item-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0;
+  width: 172px;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -219,12 +275,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin: 0;
   padding: 0;
-}
-
-.advantages-item-colored .advantages-item-description {
-  color: #ffffff;
+  margin: 0;
 }
 
 .services {
@@ -239,11 +291,12 @@ body {
 
 
 .services-title {
+  width: 505px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 20px;
   padding: 0;
 }
@@ -268,25 +321,31 @@ body {
   width: 400px;
   height: 385px;
   background-repeat: no-repeat;
-  background-position: 50% 81px;
 }
 
-.service-info-container {
+.services-item-colored {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-info-container {
   padding: 183px 85px 81px;
+
 }
 
 .item-house {
-  background-color: rgba(131, 179, 211, 0.12);
   background-image: url('../images/index/services-house.svg');
+  background-position: 163.5px 81px;
 }
 
 .item-food {
   background-image: url('../images/index/services-food.svg');
+  background-position: 163.5px 82px;
 }
 
 .item-gift {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url('../images/index/services-gift.svg');
+  background-position: 168.5px 79px;
 }
 
 .services-item-title {
@@ -295,6 +354,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -308,8 +368,8 @@ body {
 }
 
 .hotel-search-introduction-container {
-  width: 592px;
   margin: 0 auto;
+  width: 592px;
   padding: 96px 0;
 }
 
@@ -356,6 +416,8 @@ body {
 
 .hotel-search-button {
   background-color: #756157;
+  margin: 0 auto;
+  width: 376px;
 }
 
 .newsletter-description {
@@ -369,15 +431,22 @@ body {
 
 .newsletter-form {
   display: flex;
-  height: 52px;
+  flex-wrap: wrap;
+  max-width: 684px;
 }
 
 .field-newsletter {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
   flex-grow: 1;
+  margin: 0;
   padding: 14px 0 14px 20px;
   border: none;
   outline: none;
   border-radius: 4px 0 0 4px;
+  background: #F2F2F2;
 }
 
 .newsletter-button {
@@ -386,42 +455,38 @@ body {
 }
 
 .field-newsletter::placeholder {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
   opacity: 0.6;
 }
 
 .index-footer-newsletter {
+  background-color: #82B3D3;
   background-image: url('../images/footer/subscribe-background.jpg');
   color: #ffffff;
-  background-color: #82B3D3;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 51px 0 77px;
+  padding: 96px 0 104px;
 }
 
 .page-footer-container {
   display: flex;
+  align-items: center;
   margin: 40px 70px 30px;
-}
-
-.footer-social {
-  width: 142px;
 }
 
 .footer-social-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 5px 0;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 141.9px;
 }
 
 .footer-social-icon {
   display: block;
   background-repeat: no-repeat;
-  width: 47.3px;
-  height: 40px;
+  min-width: 47.3px;
+  min-height: 40px;
   background-position: center;
 }
 
@@ -438,7 +503,7 @@ body {
 }
 
 .footer-contacts {
-  width: 720px;
+  flex-grow: 1;
 }
 
 .footer-contacts-address-phone {
@@ -450,20 +515,20 @@ body {
   font-style: normal;
 }
 
-.footer-htmlacademy {
-  width: 115px;
-  margin-left: auto;
+.svg-normalize {
+  display: block;
 }
 
 /* Catalog */
 
 .catalog-filters {
-  color: #ffffff;
   background-color: #81B3D3;
+  color: #ffffff;
   background-image: url('../images/catalog/filters-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 35px 70px 70px;
+  margin-bottom: 50px;
 }
 
 .inner-header {
@@ -508,6 +573,7 @@ body {
 
 .catalog-filter {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-group {
@@ -559,13 +625,13 @@ body {
 }
 
 .control-input[type="text"] {
+  background-color: #F2F2F2;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   width: 143px;
   height: 48px;
   margin-bottom: 36px;
-  background-color: #F2F2F2;
   border: none;
   outline: none;
   padding: 12px 0 12px 20px;
@@ -573,7 +639,7 @@ body {
 
 .control-input-min {
   border-radius: 4px 0 0 4px;
-  margin-right:2px;
+  margin-right: 2px;
 }
 
 .control-input-max {
@@ -604,9 +670,9 @@ body {
 }
 
 .products-settings {
-  margin: 50px 0 40px;
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .number-matches {
@@ -618,6 +684,7 @@ body {
 }
 
 .select-control {
+  font-family: 'PT Sans';
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -625,7 +692,8 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   width: 292px;
-  padding: 14px 0 14px 20px;
+  height: 48px;
+  padding: 10px 0 11px 15px;
 }
 
 .view-list {
@@ -634,18 +702,20 @@ body {
   margin-left: auto;
   padding: 0;
   display: flex;
-  column-gap: 8px;
+}
+
+.view-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .icon-view-button {
   display: block;
   background-repeat: no-repeat;
-  width: 47.3px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   background-position: center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  marg
 }
 
 .icon-view-active {
@@ -664,13 +734,18 @@ body {
   background-image: url('../images/catalog/view-list.svg');
 }
 
+.products {
+  margin-bottom: 40px;
+}
+
 .products-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .product-card {
@@ -679,6 +754,11 @@ body {
   padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.product-card:not(:nth-child(3n)) {
+  margin-right: 20px;
 }
 
 .product-card-title {
@@ -736,15 +816,19 @@ body {
 
 .pagination {
   margin: 0;
+  margin-bottom: 60px;
   padding: 0;
   list-style: none;
   display: flex;
-  column-gap: 8px;
 }
 
 .pagination-item {
   background-color: #82B3D3;
   border-radius: 4px;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-link {
@@ -770,9 +854,5 @@ body {
 }
 
 .catalog-footer-newsletter {
-  margin: 96px auto 104px;
-}
-
-.catalog-footer-newsletter .field-newsletter {
-  background-color: #F2F2F2;
+  padding: 97px 0 104px;
 }
