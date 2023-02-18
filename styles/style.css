@@ -118,6 +118,7 @@ body {
 .navigation-actions {
   width: 268px;
   margin-left: auto;
+  align-items: center;
 }
 
 .navigation-link {
@@ -143,8 +144,6 @@ body {
 
 .navigation-link-favorite {
   background-image: url('../images/header/favorite.svg');
-  width: 20px;
-  height: 20px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -164,7 +163,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   padding: 8px 34px;
-  margin: 14px 0 14px 20px;
+  margin-left: 20px;
 }
 
 .main-index {
@@ -234,6 +233,7 @@ body {
   background-color: #82B3D3;
   color: #ffffff;
 }
+
 .advantages-item-semicolored {
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -275,7 +275,7 @@ body {
   line-height: 21px;
   color: #333333;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 
 .services {
@@ -368,8 +368,8 @@ body {
 }
 
 .hotel-search-introduction-container {
-  width: 592px;
   margin: 0 auto;
+  width: 592px;
   padding: 96px 0;
 }
 
