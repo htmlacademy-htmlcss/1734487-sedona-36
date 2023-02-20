@@ -741,7 +741,7 @@ body {
   padding: 0;
   padding-bottom: 40px;
   display: grid;
-  grid-template-columns: repeat(3,340px);
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
   border-bottom: 1px solid #E6E6E6;
 }
@@ -769,8 +769,8 @@ body {
 }
 
 .product-card-title {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -832,8 +832,16 @@ body {
   grid-column: 1 / 2;
 }
 
+.stars-two {
+  width: 41px;
+}
+
+.stars-three {
+  width: 64px;
+}
+
 .stars-four {
-  width: 80px;
+  width: 89px;
 }
 
 .hotel-site-rating {
@@ -853,7 +861,7 @@ body {
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(6,60px);
+  grid-template-columns: repeat(6, 60px);
   column-gap: 8px;
 }
 
