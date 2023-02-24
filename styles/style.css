@@ -97,6 +97,8 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
   max-width: 400px;
 }
 
@@ -116,9 +118,8 @@ body {
 }
 
 .navigation-actions {
-  width: 268px;
+  max-width: 360px;
   margin-left: auto;
-  align-items: center;
 }
 
 .navigation-link {
@@ -163,7 +164,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   padding: 8px 34px;
-  margin-left: 20px;
+  margin: 14px 0 14px 20px;
 }
 
 .main-index {
@@ -470,7 +471,7 @@ body {
 .page-footer-container {
   display: flex;
   align-items: center;
-  margin: 40px 70px 30px;
+  padding: 40px 70px 30px;
 }
 
 .footer-social-list {
@@ -701,11 +702,10 @@ body {
   margin: 0;
   margin-left: auto;
   padding: 0;
-  display: flex;
-}
-
-.view-item:not(:last-child) {
-  margin-right: 8px;
+  display: grid;
+  grid-template-columns: repeat(3,48px);
+  gap: 8px;
+  max-width: 168px;
 }
 
 .icon-view-button {
