@@ -106,15 +106,14 @@ body {
   position: relative;
 }
 
-/* ВРЕМЕННОЕ РЕШЕНИЕ, ЧТОБЫ ПОТОМ НЕ ЗАБЫТЬ ПРО ЛИНИЮ В ПРИНЦИПЕ*/
 .current-page-item::after {
-  content: '';
-  border-bottom: 2px solid #756257;
   position: absolute;
-  left: 0;
-  right: 0;
+  content: '';
+  background-color: #756257;
+  height: 2px;
+  left: 16px;
+  right: 16px;
   bottom: -1px;
-  margin: 0 16px;
 }
 
 .navigation-actions {
@@ -823,6 +822,7 @@ body {
 
 .products-settings {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 40px;
 }
@@ -836,22 +836,29 @@ body {
 }
 
 .select-control {
+  max-width: 292px;
+  width: 100%;
   font-family: 'PT Sans';
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  outline: none;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  width: 292px;
-  height: 48px;
-  padding: 10px 0 11px 15px;
+  padding: 12px 40px 12px 18px;
+  appearance: none;
+  background-image: url('../images/catalog/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
-.select-control:hover,
+.select-control:hover{
+  border-color: #68a2ca;
+}
+
 .select-control:focus {
-  outline: none;
-  border-color: #68A2CA;
+  border-color: #3F5E72;
 }
 
 .select-control:disabled {
@@ -867,7 +874,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 48px);
   gap: 8px;
-  max-width: 168px;
 }
 
 .icon-view-button {
