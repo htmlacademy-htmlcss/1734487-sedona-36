@@ -665,6 +665,24 @@ body {
   border-radius: 50%;
 }
 
+.modal-close-button:hover {
+  outline: none;
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  outline: none;
+   background-color: #E6E6E6;
+}
+.modal-close-button:active path {
+  fill: #A1A1A1;
+}
+
 .svg-center {
   margin: 0 auto;
 }
@@ -736,6 +754,20 @@ body {
   cursor: pointer;
 }
 
+.modal-date::placeholder{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-date:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-date:focus,
+.modal-date:placeholder-shown:focus {
+  outline: 3px solid #83B3D3;
+  background-color: #E6E6E6;
+}
+
 .modal-matches-text {
   margin: 4px 20px 0;
   font-weight: 400;
@@ -747,19 +779,28 @@ body {
   color: #FF5757
 }
 
+.modal-date:focus:not(placeholder-shown) {
+  background-color: #F2F2F2;
+  outline: 2px solid #000000;
+}
+
+.modal-date:placeholder-shown + .modal-matches-text {
+  visibility: hidden;
+}
+
 .modal-amount-wrapper {
   display: flex;
 }
 
 .modal-field-label-tooltip {
   position: relative;
-  padding-right: 10px;
+  padding-right: 84px;
+  padding-top: 11px;
 }
 
 .tooltip {
   position: absolute;
-  /* margin-top: 4px;
-  margin-left: 2px; */
+  margin-left: 11px;
   width: 26px;
   height: 26px;
 }
@@ -795,8 +836,9 @@ body {
   color: #FFFFFF;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 18px 23px;
   width: 256px;
+  height: 143px;
   position: absolute;
   margin-top: 15px;
   left: 45%;
@@ -836,6 +878,48 @@ body {
   border: none;
   background: #F2F2F2;
   cursor: pointer;
+  position: relative;
+}
+
+.modal-minus-button:hover path,
+.modal-plus-button:hover path {
+  fill:#000000;
+  fill-opacity: 1;
+}
+
+.modal-minus-button:focus,
+.modal-plus-button:focus {
+  outline: none;
+}
+
+.modal-minus-button:focus path,
+.modal-plus-button:focus path {
+  fill:#000000;
+  fill-opacity: 1;
+}
+
+.modal-minus-button:focus::after,
+.modal-plus-button:focus::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 3px solid #82B3D3;
+  border-radius: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-minus-button:active path,
+.modal-plus-button:active path {
+  fill:#000000;
+  fill-opacity: 0.2;
+}
+
+.modal-minus-button:active::after,
+.modal-plus-button:active::after {
+  content: none;
 }
 
 .modal-minus-button {
@@ -854,6 +938,10 @@ body {
   line-height: 20px;
 }
 
+.modal-amount:focus {
+  outline: none;
+}
+
 .modal-plus-button {
   border-radius: 0 4px 4px 0;
 }
@@ -869,6 +957,18 @@ body {
   line-height: 24px;
   color: #FFFFFF;
 }
+
+.modal-submit:hover,
+.modal-submit:focus {
+  outline: none;
+  background-color: #68A2CA;
+}
+
+.modal-submit:active {
+  background-color: #68A2CA;
+  color: rgba(255,255,255, 0.3);
+}
+
 
 
 /* Catalog */
