@@ -17,11 +17,7 @@
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* НЕ ЗАБУДЬ УДАЛИТЬ */
-  /* outline: 1px solid green; */
 }
 
 html {
@@ -36,7 +32,8 @@ html {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -247,7 +244,7 @@ body {
 
 .advantages-introduction-container {
   margin: 0 auto 21px;
-  width: 651px;
+  width: 660px;
   padding: 69px 0;
 }
 
@@ -283,7 +280,7 @@ body {
 
 .advantage-text-container {
   width: 400px;
-  padding: 112.5px 85px;
+  padding: 112.5px 84px;
 }
 
 .advantages-item-colored .advantage-text-container {
@@ -1193,7 +1190,8 @@ body {
 
 .control-original:disabled + .control-input,
 .control-original:disabled + .control-input + .control-label {
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
   opacity: 0.6;
 }
 
@@ -1215,7 +1213,8 @@ body {
 .price-input::-webkit-inner-spin-button,
 .modal-amount::-webkit-outer-spin-button,
 .modal-amount::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1421,7 +1420,8 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding: 12.6px 40px 12px 18.4px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   background-image: url('../images/catalog/arrow-down.svg');
   background-repeat: no-repeat;
   background-position: right 17px center;
@@ -1453,12 +1453,26 @@ body {
 
 .icon-view-button {
   display: block;
+  background-color: #ffffff;
   background-repeat: no-repeat;
+  background-position: center;
   width: 48px;
   height: 48px;
-  background-position: center;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+}
+
+.tile-layout-button {
+  background-image: url('../images/catalog/view-tile.svg');
+
+}
+
+.cards-layout-button {
+  background-image: url('../images/catalog/view-card.svg');
+}
+
+.list-layout-button {
+  background-image: url('../images/catalog/view-list.svg');
 }
 
 .icon-view-button:hover {
@@ -1476,18 +1490,6 @@ body {
 
 .icon-view-active {
   border: 2px solid #000000;
-}
-
-.tile-layout-button {
-  background-image: url('../images/catalog/view-tile.svg');
-}
-
-.cards-layout-button {
-  background-image: url('../images/catalog/view-card.svg');
-}
-
-.list-layout-button {
-  background-image: url('../images/catalog/view-list.svg');
 }
 
 .products-list {
@@ -1609,9 +1611,10 @@ body {
 }
 
 .hotel-stars {
+  background-color: #ffffff;
   background-image: url('../images/catalog/hotel-star.svg');
-  margin: 10px 0;
   background-repeat: space;
+  margin: 10px 0;
   height: 17px;
   grid-row: 4 / 5;
   grid-column: 1 / 2;
