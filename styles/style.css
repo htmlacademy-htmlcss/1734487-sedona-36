@@ -1191,6 +1191,11 @@ body {
   outline: 3px solid #83b3d3;
 }
 
+.control:active .control-original:enabled + .control-input,
+.control:active .control-original:enabled + .control-input + .control-label {
+  opacity: 0.3;
+}
+
 .control-original:disabled + .control-input,
 .control-original:disabled + .control-input + .control-label {
   -webkit-user-select: none;
