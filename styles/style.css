@@ -1010,11 +1010,11 @@ body {
 .modal-submit:hover,
 .modal-submit:focus {
   outline: none;
-  background-color: rgb(104, 162, 202);
+  background-color: #68a2ca;
 }
 
 .modal-submit:enabled:active {
-  background-color: #68a2ca;
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1371,7 +1371,7 @@ body {
 }
 
 .filters-submit:enabled:active {
-  background-color: #68a2ca;
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
