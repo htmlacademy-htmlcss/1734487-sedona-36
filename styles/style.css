@@ -1409,6 +1409,7 @@ body {
 }
 
 .select-control {
+  background-color: #ffffff;
   max-width: 292px;
   width: 100%;
   font-family: "PT Sans", sans-serif;
