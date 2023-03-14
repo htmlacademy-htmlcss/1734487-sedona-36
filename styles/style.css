@@ -567,7 +567,7 @@ body {
 }
 
 .index-footer-newsletter {
-  background-color: #82b3d3;
+  background-color: #707a81;
   background-image: url('../images/footer/subscribe-background.jpg');
   color: #ffffff;
   background-size: cover;
@@ -1021,7 +1021,7 @@ body {
 /* Catalog */
 
 .catalog-filters {
-  background-color: #81b3d3;
+  background-color: #707a81;
   color: #ffffff;
   background-image: url('../images/catalog/filters-background.jpg');
   background-repeat: no-repeat;
@@ -1332,7 +1332,7 @@ body {
 }
 
 .button-price-range:focus {
-  outline: 3px solid #078ccf;
+  outline: 3px solid #83b3d3;
 }
 
 .button-price-range:active {
