@@ -217,9 +217,9 @@ body {
   outline: none;
 }
 
-.header-button:enabled:active,
-.hotel-search-button:enabled:active,
-.details-button:enabled:active {
+.header-button:active,
+.hotel-search-button:active,
+.details-button:active {
   background: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
