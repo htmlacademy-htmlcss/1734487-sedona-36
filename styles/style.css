@@ -1060,17 +1060,17 @@ body {
   display: block;
 }
 
-.breadcrumbs-link:hover,
-.breadcrumps-link:hover path {
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover,
+.breadcrumbs-item:not(:last-child) .breadcrumps-link:hover path {
   fill-opacity: 0.6;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link:focus {
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:focus {
   outline: none;
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:active {
   fill-opacity: 0.3;
   color: rgba(255, 255, 255, 0.3);
 }
