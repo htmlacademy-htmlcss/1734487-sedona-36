@@ -1624,6 +1624,10 @@ body {
   grid-column: 1 / 2;
 }
 
+.stars-one {
+  width: 19px;
+}
+
 .stars-two {
   width: 41px;
 }
@@ -1634,6 +1638,10 @@ body {
 
 .stars-four {
   width: 89px;
+}
+
+.stars-five {
+  width: 107px;
 }
 
 .hotel-site-rating {
