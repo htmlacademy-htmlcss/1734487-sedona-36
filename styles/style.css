@@ -632,12 +632,14 @@ body {
 }
 
 .footer-contacts-address-phone {
+  display: block;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: inherit;
   font-style: normal;
+  max-width: 802px;
 }
 
 .footer-contacts-address-phone:hover,
