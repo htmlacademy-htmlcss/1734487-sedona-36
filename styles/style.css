@@ -1052,8 +1052,7 @@ body {
   display: block;
 }
 
-.breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover,
-.breadcrumbs-item:not(:last-child) .breadcrumps-link:hover path {
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover {
   fill-opacity: 0.6;
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
