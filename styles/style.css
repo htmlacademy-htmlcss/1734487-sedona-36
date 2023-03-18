@@ -130,10 +130,10 @@ body {
   color: #7c7c7c;
 }
 
-.navigation-item a:focus-visible:not(.button),
-.navigation-item:focus-visible:not(.button) {
-  outline: none;
+.navigation-item:focus:not(.button),
+.navigation-item a:focus:not(.button) {
   color: #7c7c7c;
+  outline: auto;
 }
 
 .navigation-link:active {
@@ -591,10 +591,6 @@ body {
   max-width: 143px;
 }
 
-.footer-social-icon:focus {
-  outline: none;
-}
-
 .social-icon-vk {
   padding: 13px 11.67px;
   display: block;
@@ -633,19 +629,20 @@ body {
 
 .footer-contacts-address-phone {
   display: block;
+  max-width: 802px;
+  width: max-content;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: inherit;
   font-style: normal;
-  max-width: 802px;
+  margin: 0 auto;
 }
 
 .footer-contacts-address-phone:hover,
 .footer-contacts-address-phone:focus {
   color: #756157;
-  outline: none;
 }
 
 .footer-contacts-address-phone:active {
@@ -654,10 +651,6 @@ body {
 
 .svg-normalize {
   display: block;
-}
-
-.footer-htmlacademy-link:focus {
-  outline: none;
 }
 
 .footer-htmlacademy-link:hover path,
@@ -1064,10 +1057,6 @@ body {
 .breadcrumbs-item:not(:last-child) .breadcrumps-link:hover path {
   fill-opacity: 0.6;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.breadcrumbs-item:not(:last-child) .breadcrumbs-link:focus {
-  outline: none;
 }
 
 .breadcrumbs-item:not(:last-child) .breadcrumbs-link:active {
