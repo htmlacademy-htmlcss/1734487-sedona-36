@@ -214,7 +214,6 @@ body {
 .details-button:hover,
 .details-button:focus {
   background-color: #615048;
-  outline: none;
 }
 
 .header-button:active,
@@ -557,7 +556,6 @@ body {
 .favorite-button-inactive:hover,
 .favorite-button-inactive:focus {
   background-color: #68a2ca;
-  outline: none;
 }
 
 .newsletter-button:enabled:active,
@@ -638,6 +636,7 @@ body {
   color: inherit;
   font-style: normal;
   margin: 0 auto;
+  word-wrap: break-word;
 }
 
 .footer-contacts-address-phone:hover,
@@ -1057,6 +1056,7 @@ body {
 .breadcrumbs-item:not(:last-child) .breadcrumps-link:hover path {
   fill-opacity: 0.6;
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .breadcrumbs-item:not(:last-child) .breadcrumbs-link:active {
@@ -1355,7 +1355,6 @@ body {
 
 .filters-submit:hover,
 .filters-submit:focus {
-  outline: none;
   background-color: #68a2ca;
 }
 
@@ -1600,7 +1599,6 @@ body {
 .favorite-button-active:hover,
 .favorite-button-active:focus {
   background-color: #6c9e42;
-  outline: none;
 }
 
 .favorite-button-active:active {
@@ -1693,7 +1691,6 @@ body {
   background-color: #68a2ca;
   box-shadow: inset 0 0 0 1px #82b3d3;
   border-radius: 4px;
-  outline: none;
 }
 
 .pagination-link:not(.pagination-current):not(.pagination-etc):active {
