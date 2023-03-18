@@ -130,10 +130,10 @@ body {
   color: #7c7c7c;
 }
 
-.navigation-item a:focus-visible:not(.button),
-.navigation-item:focus-visible:not(.button) {
-  outline: none;
+.navigation-item:focus:not(.button),
+.navigation-item a:focus:not(.button) {
   color: #7c7c7c;
+  outline: auto;
 }
 
 .navigation-link:active {
@@ -214,12 +214,11 @@ body {
 .details-button:hover,
 .details-button:focus {
   background-color: #615048;
-  outline: none;
 }
 
-.header-button:enabled:active,
-.hotel-search-button:enabled:active,
-.details-button:enabled:active {
+.header-button:active,
+.hotel-search-button:active,
+.details-button:active {
   background: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -304,6 +303,7 @@ body {
 .advantages-item-image {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .advantages-item-title::after {
@@ -556,7 +556,6 @@ body {
 .favorite-button-inactive:hover,
 .favorite-button-inactive:focus {
   background-color: #68a2ca;
-  outline: none;
 }
 
 .newsletter-button:enabled:active,
@@ -566,7 +565,7 @@ body {
 }
 
 .index-footer-newsletter {
-  background-color: #82b3d3;
+  background-color: #707a81;
   background-image: url('../images/footer/subscribe-background.jpg');
   color: #ffffff;
   background-size: cover;
@@ -588,10 +587,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   max-width: 143px;
-}
-
-.footer-social-icon:focus {
-  outline: none;
 }
 
 .social-icon-vk {
@@ -631,18 +626,22 @@ body {
 }
 
 .footer-contacts-address-phone {
+  display: block;
+  max-width: 802px;
+  width: max-content;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: inherit;
   font-style: normal;
+  margin: 0 auto;
+  word-wrap: break-word;
 }
 
 .footer-contacts-address-phone:hover,
 .footer-contacts-address-phone:focus {
   color: #756157;
-  outline: none;
 }
 
 .footer-contacts-address-phone:active {
@@ -651,10 +650,6 @@ body {
 
 .svg-normalize {
   display: block;
-}
-
-.footer-htmlacademy-link:focus {
-  outline: none;
 }
 
 .footer-htmlacademy-link:hover path,
@@ -1007,18 +1002,18 @@ body {
 .modal-submit:hover,
 .modal-submit:focus {
   outline: none;
-  background-color: rgb(104, 162, 202);
+  background-color: #68a2ca;
 }
 
 .modal-submit:enabled:active {
-  background-color: #68a2ca;
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
 /* Catalog */
 
 .catalog-filters {
-  background-color: #81b3d3;
+  background-color: #707a81;
   color: #ffffff;
   background-image: url('../images/catalog/filters-background.jpg');
   background-repeat: no-repeat;
@@ -1057,17 +1052,14 @@ body {
   display: block;
 }
 
-.breadcrumbs-link:hover,
-.breadcrumps-link:hover path {
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover,
+.breadcrumbs-item:not(:last-child) .breadcrumps-link:hover path {
   fill-opacity: 0.6;
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
-.breadcrumbs-link:focus {
-  outline: none;
-}
-
-.breadcrumbs-link:active {
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:active {
   fill-opacity: 0.3;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1186,6 +1178,11 @@ body {
 
 .control-original:focus-visible + .control-input {
   outline: 3px solid #83b3d3;
+}
+
+.control:active .control-original:enabled + .control-input,
+.control:active .control-original:enabled + .control-input + .control-label {
+  opacity: 0.3;
 }
 
 .control-original:disabled + .control-input,
@@ -1358,12 +1355,11 @@ body {
 
 .filters-submit:hover,
 .filters-submit:focus {
-  outline: none;
   background-color: #68a2ca;
 }
 
 .filters-submit:enabled:active {
-  background-color: #68a2ca;
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1409,6 +1405,7 @@ body {
 }
 
 .select-control {
+  background-color: #ffffff;
   max-width: 292px;
   width: 100%;
   font-family: "PT Sans", sans-serif;
@@ -1602,7 +1599,6 @@ body {
 .favorite-button-active:hover,
 .favorite-button-active:focus {
   background-color: #6c9e42;
-  outline: none;
 }
 
 .favorite-button-active:active {
@@ -1620,6 +1616,10 @@ body {
   grid-column: 1 / 2;
 }
 
+.stars-one {
+  width: 19px;
+}
+
 .stars-two {
   width: 41px;
 }
@@ -1630,6 +1630,10 @@ body {
 
 .stars-four {
   width: 89px;
+}
+
+.stars-five {
+  width: 107px;
 }
 
 .hotel-site-rating {
@@ -1687,7 +1691,6 @@ body {
   background-color: #68a2ca;
   box-shadow: inset 0 0 0 1px #82b3d3;
   border-radius: 4px;
-  outline: none;
 }
 
 .pagination-link:not(.pagination-current):not(.pagination-etc):active {
